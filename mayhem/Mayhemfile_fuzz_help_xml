@@ -1,0 +1,7 @@
+project: savantenvs/abseil-py
+target: fuzz-help-xml
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_help_xml
+    libfuzzer: true
+    timeout: 10

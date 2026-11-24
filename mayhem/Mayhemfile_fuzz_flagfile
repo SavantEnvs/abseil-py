@@ -1,0 +1,10 @@
+project: savantenvs/abseil-py
+target: fuzz-flagfile
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-flagfile/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_flagfile
+    libfuzzer: true
+    timeout: 10

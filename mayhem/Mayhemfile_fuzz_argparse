@@ -1,0 +1,7 @@
+project: savantenvs/abseil-py
+target: fuzz-argparse
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_argparse
+    libfuzzer: true
+    timeout: 10

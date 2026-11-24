@@ -1,0 +1,6 @@
+# Build context for mayhem/Dockerfile (BuildKit prefers this file over a root .dockerignore).
+# .git is deliberately kept: the image carries the full history (SPEC 6.2 item 2).
+**/__pycache__
+**/*.pyc
+mayhem/out
+ctrf-report.json
